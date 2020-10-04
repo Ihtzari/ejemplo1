@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>tarea 1</title>
+	<link rel="stylesheet" href="">
+</head>
+<body style="background-color:#20B2AA;">
+	<H1>LISTAS ORDENADAS, DESORDENADAS Y DEFINIDAS.</H1>
+
+	<img src="listas-html-ul-ol-dl.jpg" alt="listas">
+
+	<h2>Listas ordenadas.</h2>
+
+	<p>Imagine que tiene un documento donde maneja una considerable cantidad de información. Usualmente cuando existe esta situación, usted desea abreviar el tiempo para que cualquier persona encuentre más rápida y eficientemente cierto punto de interés entre toda la cantidad de información disponible, para lograr esto se recurre a elaborar algún tipo de lista (como un índice, por ejemplo).</p>
+
+	<p>En este punto se explorarán las posibilidades de HTML con respecto al uso de listas, como son: listas numeradas, conocidas también como listas ordenadas, listas no numeradas llamadas también listas no ordenadas y las listas de definición. También se aprenderá cómo anidar listas dentro de otras.</p>
+
+	<h2>Listas numeradas y listas no numeradas</h2>
+	<p>La etiqueta con cierre para listas no numeradas es &lt;ul&gt;, cada elemento de la lista utilizará un símbolo llamado bullet. Para listas numeradas se usa la etiqueta &lt;ol&gt;, aquí, a cada elemento de la lista le precederá un número. Al iniciar la lista se utiliza la etiqueta &lt;ul&gt; o bien la etiqueta &lt;ol&gt;, se coloca cada elemento de la lista delimitado por la etiqueta &lt;li&gt; y su cierre &lt;/li&gt;, y de inmediato se cierran estas listas con &lt;/ul&gt; o &lt;/ol&gt; según sea el caso.</p>
+
+	<h2>TAG UL</h2>
+
+	<p>La etiqueta &lt;ul&gt;, permite definir una lista desordenada (“Unordered List”). Esta etiqueta es a su vez contenedora de otras etiquetas, siendo estas últimas las que componen cada uno de los elementos de los que está compuesta la lista.</p>
+
+	<p>Para especificar un elemento en la lista se ha de utilizar la etiqueta &lt;li&gt; &gt;/li&gt;, en la que se ha de especificar el texto que compone el elemento de la lista.</p>
+
+	<p>Una lista puede contener como elemento de lista, otra lista, es decir se pueden crear listas anidadas.</p>
+
+	<p>El siguiente ejemplo muestra el uso de la etiqueta en un documento web.</p>
+
+	<img src="lista.jpg" alt="ejemplo 1">
+
+	<div class="container">
+		<p>Lista con elementos desordenados</p>
+		
+		<ul>
+			<li>Uno</li>
+			<li>Dos</li>
+			<li>Tres</li>
+		</ul>
+		
+		<p>Lista con sublistas anidadas</p>
+		
+		<ul>
+			<li>Primero</li>
+			<li>Segundo
+				<ul>
+					<li>Segundo Uno</li>
+					<li>Segundo Dos</li>
+				</ul>
+			</li>
+			<li>Tercero</li>
+		</ul>
+	</div>
+
+	<h2>TAG OL</h2>
+
+	<p>La etiqueta &lt;ol&gt;, permite definir listas o viñetas ordenadas (“Ordered List”), bien con numeración o alfabéticamente. Esta etiqueta es a su vez contenedora de otras etiquetas, siendo estas últimas las que componen cada uno de los elementos de los que está compuesta la lista.</p>
+
+	<p>Para especificar un elemento en la lista se ha de utilizar la etiqueta &lt;li&gt; &lt;/li&gt;, en la que se ha de especificar el texto que compone el elemento de la lista.</p>
+
+	<p>Una lista puede contener como elemento de lista, otra lista, es decir se pueden crear listas anidadas.</p>
+
+	<p>La sintaxis de la etiqueta es la siguiente:</p>
+	<img src="lista1.jpg" alt="ejemplo 2">
+
+	<div class="container">
+		<ol reversed start="valor" type="valor">
+			<li>Elemento de lista</li>
+			<li>Elemento de lista</li>
+			<li> … </li>
+		</ol>
+	</div>
+
+	<p>Los atributos que pueda utilizar la etiqueta, aparte de los globales, son los siguientes.</p>
+
+	<h2>type</h2>
+
+	<p>El atributo type, permite especificar el tipo de orden que se de aplicar a la lista, estableciendo de esta forma que la lista se represente mediante diferentes tipos de numeración.</p>
+
+
+	<p>Los diferentes valores que puede recibir este atributo son los siguientes:</p>
+
+	<img src="tabla1.jpg" alt="tabla">
+
+	<h2>start</h2>
+
+	<p>El atributo start, permite indicar el valor de inicio, por el cual ha de comenzar la lista ordenada, siendo este un valor numérico, en caso de ser la lista ordenada de forma alfabética, el valor de inicio que se exprese, se corresponderá con el orden el abecedario ASCII correspondiente.</p>
+
+	<p>La sintaxis de la etiqueta con el atributo es la siguiente:</p>
+
+	<img src="lista2.jpg" alt="ejemplo 3">
+	<div class="container">
+		<ol start="valor">
+			<li>Elemento de lista</li>
+			<li>Elemento de lista</li>
+			<li> … </li>
+		</ol>
+	</div>
+
+	<h2>reversed</h2>
+
+	<p>El atributo reversed, permite indicar que la numeración u orden que se haya establecido se represente de forma inversa, si tuviéramos una lista con valor de inicio 1, 2, 3, sucesivamente, su representación al encontrarse este atributo seria 3,2,1.</p>
+
+	<p>Es un atributo con valor booleano, en caso de aparecer el atributo en la etiqueta se aplica el valor.</p>
+
+	<p>La sintaxis del atributo aplicado a la etiqueta es la siguiente:</p>
+
+	<img src="lista3.jpg" alt="ejemplo 4">
+	<div class="container">
+		<ol reversed>
+			li>Elemento de lista</li>
+			<li>Elemento de lista</li>
+			<li> … </li>
+		</ol>
+	</div>
+
+	<p>El siguiente ejemplo muestra el uso de las listas ordenadas utilizando variaciones sobre la misma.</p>
+
+	<img src="lista4.jpg" alt="ejemplo 5">
+
+	<div class="container">
+		<p>Lista ordenada numéricamente por defecto>/p>
+		
+		<ol>
+			<li>Elemento</li>
+			<li>Elemento</li>
+			<li>Elemento</li>
+		</ol>
+		
+		<p>Lista ordenada alfabéticamente</p>
+		
+		<ol type="a">
+			<li>Primero</li>
+			<li>Segundo</li>
+			<li>Tercero</li>
+		</ol>
+		
+		<p>Lista con todos los atributos</p>
+		
+		<ol type="I" start="10" reversed>
+			<li>Elemento</li>
+			<li>Elemento</li>
+			<li>Elemento</li>
+		</ol>
+	</div>
+
+	<h2>TAG DL</h2>
+
+	<p>La etiqueta &lt;dl&gt;, permite definir lo que se denominan, listas de definición, las cuales a su vez están compuestas por un término, y una definición.</p>
+
+	<p>Para realizar la lista se utilizan dos etiquetas más, la primera es &lt;dt&gt; &lt;/dt&gt;, que permite especificar el termino en la lista. Y otra etiqueta &lt;dd&gt; &lt;/dd&gt;, que permite especificar la definición.</p>
+
+	<p>La sintaxis de la lista con las etiquetas correspondientes, es la siguiente:</p>
+
+	<img src="lista5.jpg" alt="ejemplo 6">
+
+	<div class="container">
+		<dl>
+			<dt>Termino a definir</dt>
+			<dd>Definición del termino</dd>
+			<dt>Termino a definir</dt>
+			<dd>Definición del termino</dd>
+			…
+		</dl>
+	</div>
+
+	<p>El siguiente ejemplo muestra el uso de la etiqueta, creando una lista de definición de términos.</p>
+	<img src="lista6.jpg" alt="ejemplo 7">
+
+	<div class="container">
+		<p>Listas de definición</p>
+		<dl>
+			<dt>BIOS</dt>
+			<dd>Basic Input Output System</dd>
+			<dt>RAM</dt>
+			<dd>Ramdon Access Memory</dd>
+			<dt>HTML5</dt>
+			<dd>Lenguaje de Marcado de Hipertexto 5</dd>
+		</dl>
+	</div>
+
+	<h1>Ejemplos de enlaces en html</h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Youtube</th>
+				<th>Facebook</th>
+				<th>Instagram</th>
+				<th>Twitter</th>
+				<th>Tecnologico de Tlahuac</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					<a title="Youtube" href="https://www.youtube.com/?tab=w1&gl=MX"><img src="youtube.jpg" alt="Youtube" /></a>
+				</td>
+				<td>
+					<a title="Facebook" href="https://www.facebook.com/?stype=lo&jlou=AfdbEcfR00sp-3kF-wvdL1QgLTV29OLcEU-sbPZ-WLkfKjYmQM3XcguYrt9grQ69GMb7Isv7_xHRhKmEGwAyCLkPLx0Nwwvz1ULlEgVhS9mzLQ&smuh=45895&lh=Ac-Ot8rYqDpt4tRXFnQ"><img src="facebook.jpg" alt="Facebook" /></a>
+				</td>
+				<td>
+					<a title="Instagram" href="https://www.instagram.com/?hl=es-la"><img src="imsta.jpg" alt="Instagram" /></a>
+				</td>
+				<td>
+					<a title="Twitter" href="https://twitter.com/?lang=es"><img src="twitter.jpg" alt="Twitter" /></a>
+				</td>
+				<td>
+					<a title="Tecnologico" href="https://tlahuac.tecnm.mx/"><img src="logotec.jpg" alt="Tecnologico" /></a>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>
